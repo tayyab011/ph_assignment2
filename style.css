@@ -15,9 +15,9 @@ nav {
 }
 nav  ul{
     display: flex;
-
+justify-content:right;
 align-items: center;
-  text-align: end;
+ 
 
 }
 nav ul li{
@@ -26,7 +26,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    margin-right: 40px;
+    margin-left: 40px;
     color: #8987A1;
     font-weight: 400;
 }
@@ -80,7 +80,7 @@ main{
 
 }
 .all-planets{
-margin: 120px 0 210px 0;
+margin: 120px 0 170px 0;
 }
 .planet-title{
     color: #E95A08;
@@ -130,9 +130,253 @@ font-weight: bold;
 }
 
 
+.container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      position: relative;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+   
+    }
+
+    .image-section {
+      flex: 1;
+      position: relative;
+    }
+
+    .image-section img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .content-section {
+      flex: 1;
+      padding-left: 30px;
 
 
+    }
+
+    .content-section h2 {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    .content-section ul {
+      margin-bottom: 20px;
+      color: #666;
+      font-size: 22px;
+      line-height: 1.5;
+  
+    }
+
+    .badge {
+      position: absolute;
+      top: -70px;
+      left: 50%;
+      transform: translateX(-77%);
+      width: 286px;
+      height: 286px;
+      z-index: 2;
+    }
+
+    .badge img {
+      width: 100%;
+   
+    }
+
+.image-container {
+  display: flex;
+  gap: 28px;
+}
+
+
+.latest-deals{
+  margin:  133px 0;
+}
+.latest-deals h3{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.latest-deals p{
+  font-size: 22px;
+  text-align: center;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: -19px;
+  margin-bottom: 120px;
+}
+.left-images {
+  width: 30%;
+  height: 423px;
+  display: flex;
+  flex-direction: column;
+  row-gap:25px;
+  
+}
+.br{
+  border-radius: 15px;
+}
+.top-img{
+   height: 50%;
+  background-image: url(./img/deal-bloom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  position: relative;
+}
+.bottom-img {
+  height: 50%;
+  background-image: url(./img/deal-ana.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.right-image {
+  width: 70%;
+  height: 423px;
+  background-image: url(./img/deal-zabo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.overlay a {
+  margin-top: 8px;
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.right-image .overlay h2{
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
 /* main end */
+
+
+/* joinbranch start */
+
+.join-branch{
+ max-width: 1440px;
+ height: 533px;
+ margin: 0 auto;
+ background-image: url(./img/news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  
+}
+
+.join{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(7, 51, 79, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.join h3{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+}
+.join-input{
+  display: flex;
+  align-items: center;
+}
+.join input{
+ width: 644px;
+ height: 50px;
+ color: rgba(0, 0, 0, 0.5);
+ padding-left: 20px;
+ background: white;
+ outline: none;
+}
+.join button{
+  background: #E95A08;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 17px 53px;
+  color: #FFFFFF;
+
+border: none;
+}
+
+
+/* joinbranch end */
+
+/* footer start */
+footer{
+   max-width: 1140px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  
+}
+footer p{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+}
+footer a{
+  display: block;
+margin-bottom: 35px;
+color: rgba(0, 0, 0, 0.5);
+text-decoration: none;
+}
+footer .footer-part:nth-child(1) {
+  width: 360px;
+}
+footer .footer-part:nth-child(4) a {
+  display: inline;
+
+}
+footer .footer-part:nth-child(4){
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+/* footer end */
 
 
 
@@ -197,24 +441,114 @@ font-weight: bold;
     width: 100%;
     padding: 12px 0;
   } 
-   /* .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: space-between;
-  }
+   .all-planets{
+margin: 20px 0 21px 0;
+}
 
-  .planet-card {
-    width: calc(50% - 8px); 
-    box-sizing: border-box;
-  }
+.container {
+  flex-direction: column;
+}
+.content-section h2 {
+    
+      margin-bottom: 0;
+      
+    }
 
-  .planet-card img {
-    width: 100%;
-  }
+    .badge{
 
-  .planet-card button {
-    width: 100%;
-    padding: 12px 0;
-  } */
+      display: none;
+    }
+     .content-section {
+      flex: 1;
+      padding-left: 0px;
+
+
+    }
+     .content-section h2 {
+      font-size: 24px;
+margin-bottom: 20px;
+font-weight: bold;
+
+      
+    }
+
+    .content-section ul {
+      font-size: 14px;
+    }
+
+    .content-section li{
+margin-bottom: 20px;
+    }
+
+    .image-container{
+      flex-direction: column;
+      margin: 0 20px;
+    }
+      .latest-deals{
+  margin:  90px 0 50px 0;
+}
+.latest-deals p{
+
+  margin-bottom: 50px;
+}
+    .left-images{
+      width: 100%;
+    
+    }
+
+    .bottom-img,.top-img{
+ height: 200px;
+    }
+    .right-image{
+      width: 100%;
+      height: 200px;
+    }
+
+.right-image .overlay h2{
+  font-size: 20px;
+ 
+}
+.join-branch{
+  height: 276px;
+}
+.join h3 {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+
+.join-input {
+  width: 80%;
+ margin: 0 30px;
+
+}
+
+.join input {
+  width: 60%;
+  height: 45px;
+  font-size: 14px;
+  padding-left: 15px;
+  border: none;
+}
+
+.join button {
+  width: 40%;
+  height: 48px;
+  font-size: 14px;
+  padding: 0;
+}
+
+
+
+footer{
+
+flex-direction: column;
+  margin: 50px 20px;
+}
+footer .footer-part:nth-child(1) {
+  width: 100%;
+}
+
 }
