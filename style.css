@@ -79,9 +79,64 @@ main{
     font-weight: 400;
 
 }
+.all-planets{
+margin: 120px 0 210px 0;
+}
+.planet-title{
+    color: #E95A08;
+}
+.all-planets h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000;
+}
+.all-planets p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 30px;
+}
+.planet-card{
+  text-align: center;
+}
+.planet-card h4{
+font-size: 22px;
+color: rgba(17, 17, 17, 1);
+font-weight: 400;
+    
+}
+.planet-card h5{
+font-size: 22px;
+color: rgba(17, 17, 17, 1);
+font-weight: bold;
+    
+}
+
+.planet-card button{
+    width: 95%;
+    background: #E95A08;
+    padding: 19px 80px;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+
 
 
 /* main end */
+
+
+
+
 
 
 @media screen and (max-width:576px) {
@@ -98,6 +153,7 @@ main{
 
 .hero-fresh{
     flex-direction: column-reverse;
+    margin-top: 30px;
 }
 .hero-info{
     margin: 0 16px;
@@ -119,4 +175,46 @@ main{
   
 
 }
+ 
+ .card-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px; 
+    margin: 0 10px;
+ 
+  }
+
+  .planet-card {
+     width: 100%; 
+
+  }
+
+  .planet-card img {
+    width: 100%;
+  }
+
+  .planet-card button {
+    width: 100%;
+    padding: 12px 0;
+  } 
+   /* .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .planet-card {
+    width: calc(50% - 8px); 
+    box-sizing: border-box;
+  }
+
+  .planet-card img {
+    width: 100%;
+  }
+
+  .planet-card button {
+    width: 100%;
+    padding: 12px 0;
+  } */
 }
