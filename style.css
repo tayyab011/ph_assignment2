@@ -3,6 +3,28 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* font code start*/
+.noto-serif{
+  font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+  }
+.Inter{
+font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+  }
+/* font code end*/
+
+
+
+
 /*  header start */
 header{
     max-width: 1140px;
@@ -90,12 +112,14 @@ margin: 120px 0 170px 0;
     font-weight: bold;
     font-size: 50px;
     color: #000000;
+
 }
 .all-planets p{
     text-align: center;
     font-weight: 400;
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
+    
 }
 .card-container{
     display: grid;
@@ -109,12 +133,14 @@ margin: 120px 0 170px 0;
 font-size: 22px;
 color: rgba(17, 17, 17, 1);
 font-weight: 400;
+font-family: "Inter", sans-serif;
     
 }
 .planet-card h5{
 font-size: 22px;
 color: rgba(17, 17, 17, 1);
 font-weight: bold;
+font-family: "Inter", sans-serif;
     
 }
 
@@ -126,6 +152,7 @@ font-weight: bold;
     border: none;
     font-weight: 600;
     font-size: 16px;
+    font-family: "Inter", sans-serif;
 
 }
 
@@ -444,7 +471,12 @@ footer .footer-part:nth-child(4){
    .all-planets{
 margin: 20px 0 21px 0;
 }
-
+.all-planets h3{
+  font-size: 24px;
+}
+.all-planets p{
+  font-size: 14px;
+}
 .container {
   flex-direction: column;
 }
@@ -453,7 +485,9 @@ margin: 20px 0 21px 0;
       margin-bottom: 0;
       
     }
-
+.planet-card h4,.planet-card h5,.planet-card button{
+  font-size: 16px;
+}
     .badge{
 
       display: none;
@@ -487,8 +521,12 @@ margin-bottom: 20px;
       .latest-deals{
   margin:  90px 0 50px 0;
 }
-.latest-deals p{
+.latest-deals h3{
+font-size: 24px;
 
+}
+.latest-deals p{
+font-size: 14px;
   margin-bottom: 50px;
 }
     .left-images{
@@ -546,6 +584,9 @@ footer{
 
 flex-direction: column;
   margin: 50px 20px;
+}
+.footer-part p{
+font-size: 16px;
 }
 footer .footer-part:nth-child(1) {
   width: 100%;
