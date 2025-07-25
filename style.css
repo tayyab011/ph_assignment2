@@ -221,6 +221,18 @@ font-family: "Inter", sans-serif;
   gap: 28px;
 }
 
+.badge {
+  animation: spin 24s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(-77%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-77%) rotate(360deg);
+  }
+}
 
 .latest-deals{
   margin:  133px 0;
