@@ -458,7 +458,9 @@ footer .footer-part:nth-child(4){
   
 
 }
- 
+ .all-planets p{
+   margin: 0 16px;
+ }
  .card-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -539,7 +541,8 @@ font-size: 24px;
 }
 .latest-deals p{
 font-size: 14px;
-  margin-bottom: 50px;
+  margin:0 16px 50px 16px;
+  
 }
     .left-images{
       width: 100%;
